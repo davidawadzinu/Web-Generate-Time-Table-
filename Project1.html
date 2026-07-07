@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Automated Timetable Generator</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>Automated Timetable Generator System</h2>
+                <p class="subtitle">Capstone Project Dashboard</p>
+            </header>
+
+            <div class="card">
+                <h3>System Configuration & Resources</h3>
+                <p class="card-desc">The generator will use the following loaded resources to bulid the schedule:</p>
+
+                <div class="resource-tags">
+                    <span class="tag">📚 Math</span>
+                    <span class="tag">📚 Computer Science</span>
+                    <span class="tag">📚 Physics</span>
+                    <span class="tag">👨‍🏫 Mr. Akpaloo</span>
+                    <span class="tag">👨‍🏫 Mr. Agbenyenugah </span>
+                    <span class="tag">👨‍🏫 Mrs. Zaglago</span>
+                    <span class="tag">🏣 V11</span>
+                    <span class="tag">🏣 O.D </span> 
+                </div>
+                <button class="btn-generate" id="generateBtn">Generate Timetable</button>
+                <button class="btn-hide" id="hideBtn">Hide Timetable</button>
+            </div>
+            <div class="card">
+                <h3>Generated Schedule Grid</h3>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 15%;">Time Slot</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timetableBody">
+                            <tr>
+                                <td colspan="6" class="placeholder-text">
+                                    Click the green button above to run the scheduling generator.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

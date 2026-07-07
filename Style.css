@@ -1,0 +1,157 @@
+:root{
+    --primary-color: #4a90e2;
+    --success-color: #2ecc71;
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --border-color: #e1e4e8;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(HTU-Campus.jpg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #5be7fc;
+}
+h2{
+    color: #7700ff;
+    margin-bottom: 5px;
+}
+.subtitle {
+    color: #7f8c8d;
+    margin: 0;
+}
+/*Dasboard cards*/
+
+.card{
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+}
+.card h3{
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+.card-desc {
+    font-size: 0.9rem;
+    color: #666;
+}
+/*Lists for Resources*/
+.resource-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+.tag{
+    background-color: #b1cfec;
+    color: #1a73e8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+/*Action Buuon*/
+.btn-generate {
+    display: block;
+    width: 30%;
+    max-width: 250px;
+    margin: 20px 0 0 0;
+    padding: 12px 20px;
+    background-color: var(--success-color);
+    color: whitesmoke;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}.btn-generate:hover{
+    background-color: rgb(6, 10, 255);
+}
+
+.btn-hide{
+     display: block;
+    width: 30%;
+    max-width: 250px;
+    margin: 20px 0 0 0;
+    padding: 12px 20px;
+    background-color: #642cff;
+    color: whitesmoke;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn-hide:hover{
+    background-color: #4a90e2;
+}
+/* Reponsive Timebale Table */
+.table-responsive{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td{
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+th{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+tr:nth-child(even){
+    background-color: #f8f9fa;
+}
+.placeholder-text{
+    text-align: center;
+    color: #999;
+    padding: 30px;
+}
+
+/*Styling for the scheduled item card inside the cell*/
+.slot-card{
+    background: #fff;
+    border-left: 4px solid var(--primary-color);
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    text-align: left;
+}
+.course-name{
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 3px;
+}
+.details {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    display: block;
+}
